@@ -12,12 +12,7 @@
         "typecheckTargetName": "typecheck"
       }
     },
-    {
-      "plugin": "@nx/eslint/plugin",
-      "options": {
-        "targetName": "lint"
-      }
-    },
+    { "plugin": "@nx/eslint/plugin", "options": { "targetName": "lint" } },
     {
       "plugin": "@nx/vite/plugin",
       "options": {
@@ -41,12 +36,7 @@
         "ciTargetName": "e2e-ci"
       }
     },
-    {
-      "plugin": "@nx/jest/plugin",
-      "options": {
-        "targetName": "test"
-      }
-    }
+    { "plugin": "@nx/jest/plugin", "options": { "targetName": "test" } }
   ],
   "generators": {
     "@nx/react": {
@@ -56,9 +46,7 @@
         "linter": "eslint",
         "bundler": "vite"
       },
-      "component": {
-        "style": "tailwind"
-      },
+      "component": { "style": "tailwind" },
       "library": {
         "style": "tailwind",
         "linter": "eslint",
@@ -72,5 +60,6 @@
       "dependsOn": ["^build"],
       "inputs": ["default", "^default"]
     }
-  }
+  },
+  "nxCloudId": "6810fc0c3ade4d3322d6a42a"
 }
